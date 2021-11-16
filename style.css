@@ -1,0 +1,350 @@
+:root{
+    --white: #e8e8e8;
+    --blue: #1ca0ff;
+    --neon: #00f2ff;
+    --grey: #55545e;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: "Times New Roman", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h4,
+h5{
+    font-size: 2.35rem;
+}
+
+.navbar{
+    background: #006494;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar-logo{
+    color: #97d2fb;
+    text-decoration: none;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.navbar-link{
+    color: #97d2fb;
+}
+
+/* the hero section like zane deserves  */
+
+.hero{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url(/img/AnotherZane.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0.5rem calc((100vw - 1200px) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    color: var(--white);
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero-content p{
+    margin-bottom: 2rem;
+}
+
+.hero-content h1{
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    font-size: clamp(3rem, 8vw, 7rem);
+}
+
+.button{
+    background: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem 3rem;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.2s ease;
+}
+
+.button:hover{
+    background: #0c5991;
+}
+
+/* bio section  */
+
+.bio{
+    padding: 8rem calc((100vw - 1200px) / 2);
+}
+
+.bio-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+.bio-img{
+    width: 100%;
+    height: 100%;
+    margin: 0 3rem;
+}
+
+.bio-heading{
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+    color: #55545e;
+}
+
+.bio-paragraph{
+    font-size: clamp(1rem, 3vw, 1,5rem);
+}
+
+/* powers section  */
+
+.powers{
+    background: var(--grey);
+    color: #1ca0ff;
+    text-align: center;
+    padding: 6rem calc((100vw - 1200px) / 2);
+}
+
+.powers h1{
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    padding: 0 1rem;
+}
+
+.powers-desc{
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 1rem;
+}
+
+.powers-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.powers-card{
+    padding: 2rem;
+    background: white;
+    color: var(---blue);
+    height: 450px;
+    width: 325px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.powers-card h3{
+    font-size: clamp(1rem, 5vw, 2rem);
+    margin-bottom: 2rem;
+}
+
+.powers-card p{
+    font-size: clamp(0.5rem, 2.5vw, 1rem);
+}
+
+/* freinds section  */
+
+.friends{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.friends-text{
+    color: #0c5991;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: clamp(1rem, 5vw, 2rem);
+}
+
+.friends-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+}
+
+.friends-card{
+    height: 250px;
+    width: 200px;
+    margin: 0 1rem;
+}
+
+.friend-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.friends-card p{
+    text-align: center;
+    margin-bottom: 0.25rem;
+    font-size: clamp(1rem, 5vw, 2rem);
+    font-weight: bold;
+    color: var(--grey);
+}
+
+/* the droids in their glory  */
+
+.nindroid{
+    height: 80vh;
+    display: flex;
+    background: var(---grey);
+}
+
+.nindroid a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.nindroid a:hover{
+    background: rgba(0, 0, 0, 0.359);
+    opacity: 1;
+}
+
+.nindroid-1{
+    background: url(/img/pixal\ happy.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nindroid-2{
+    background: url(/img/MoS62EchoZane.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nindroid-3{
+    background: url(/img/cryptor.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nindroid-link{
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1rem, 5vw, 2rem);
+    height: 100%;
+    width: 100%;
+}
+
+/* email section  */
+
+.email{
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.6) 35%,
+        rgba(0, 0, 0, 0.1) 100%
+    ),url(/img/ZaneandEcho.jpg);
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    background-position: center;
+    color: #97d2fb;
+    padding: 5rem calc((100vw - 1300px) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.email-content h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    font-size: clamp(1rem, 5vw, 3rem);
+}
+
+.email-content p{
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-wrapper input{
+    outline: none;
+    width: 350px;
+    height: 50px;
+    border: none;
+    margin-right: 1rem;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+}
+
+/* the footer */
+
+footer{
+    color: white;
+    background: var(--blue);
+}
+
+.footer-wrapper{
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+footer h5{
+    flex: 1 1 40rem;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
